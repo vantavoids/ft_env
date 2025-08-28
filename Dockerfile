@@ -14,6 +14,16 @@ RUN apt-get update && apt-get install -y \
     git \
     valgrind \
     gdb \
+    libx11-dev \
+    libxext-dev \
+    libxrandr-dev \
+    libxinerama-dev \
+    libxcursor-dev \
+    libxi-dev \
+    libgl1-mesa-dev \
+    libglu1-mesa-dev \
+    xorg-dev \
+    libbsd-dev \
     && rm -rf /var/lib/apt/lists/*
 
 RUN update-alternatives --install /usr/bin/c++ c++ /usr/bin/clang++-12 100 && \
